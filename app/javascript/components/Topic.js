@@ -1,7 +1,7 @@
 import React from "react";
 
 const Topic = ({ topic, sub }) => {
-  const { name, body } = topic
+  const { id, name, body } = topic
   return (
     <>
       <div className="topic-card">
@@ -13,6 +13,8 @@ const Topic = ({ topic, sub }) => {
         <a href={`/`}>also subs</a>
         <br />
         <a href={`/subs/${sub.id}`}>sub show</a>
+        <br />
+        <a href={`/topics/${id}/comments`}>Show Comments</a>
       </div>
     </>
   );
