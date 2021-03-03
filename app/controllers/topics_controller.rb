@@ -6,6 +6,8 @@ class TopicsController < ApplicationController
     @topics = @sub.topics
     render component: "Topics", props: { sub: @sub, topics: @topics }
   end
+
+
   
   def show
     render component: "Topic", props: { sub: @sub, topic: @topic }
